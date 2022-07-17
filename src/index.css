@@ -8,12 +8,13 @@ body {
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+	font-family: "Montserrat", sans-serif, source-code-pro, Menlo, Monaco,
+		Consolas, "Courier New", monospace;
 }
 
 body {
 	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -35,10 +36,39 @@ a:hover {
 }
 
 .nav_custom {
-	margin-top: 50%;
-	margin-bottom: 50%;
+	margin-top: 40%;
 }
 
 .logo {
 	letter-spacing: 0.2rem;
+}
+
+.my_image {
+	animation: borderRadius 10s infinite;
+	box-shadow: 0 0 2px 15px rgba(0, 0, 0, 0.6);
+	width: 200px;
+}
+
+@media (min-width: 768px) {
+	.my_image {
+		width: 300px;
+	}
+}
+
+@keyframes borderRadius {
+	0% {
+		border-radius: 20% 10% 60% 50%;
+	}
+	25% {
+		border-radius: 30% 70% 40% 10%;
+	}
+	50% {
+		border-radius: 60% 50% 10% 30%;
+	}
+	75% {
+		border-radius: 10% 50% 20% 60%;
+	}
+	100% {
+		border-radius: 40% 20% 20% 60%;
+	}
 }

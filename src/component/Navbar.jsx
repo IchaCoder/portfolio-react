@@ -4,59 +4,25 @@ import React from "react";
 import { Outlet } from "react-router";
 import { useGlobalContext } from "../context";
 import logo from "../assets/logo.svg";
-import { Link } from "react-router-dom";
-import {
-	IoHome,
-	GoBriefcase,
-	BsPersonFill,
-	IoNewspaperSharp,
-	HiMailOpen,
-} from "react-icons/all";
+import NavList from "./NavList";
 
 const Home = () => {
 	const {} = useGlobalContext();
+	const date = new Date().getFullYear();
 
 	return (
-		<main className="flex gap-8">
-			<nav className="nav">
-				<div className="w-3/5 mx-auto nav_custom">
-					<div className="w-full p-2 logo font-bold text-4xl mb-12">
+		<main className="lg:flex gap-8">
+			<nav className="nav hidden lg:grid">
+				<div className="w-3/4 mx-auto nav_custom">
+					<div className="w-full p-2 logo font-bold text-4xl mb-10">
 						{/* <img src={logo} alt="sark seven logo" width="100px" height="100px" /> */}
 						EMMA
 					</div>
-					<ul>
-						<div className="flex p-2">
-							<IoHome className="text-xl" />
-							<Link to="/" className="ml-3 pr-4 capitalize">
-								hello
-							</Link>
-						</div>
-						<div className="flex p-2">
-							<BsPersonFill className="text-xl" />
-							<Link to="/" className="ml-3 pr-4 capitalize">
-								about
-							</Link>
-						</div>
-						<div className="flex p-2">
-							<GoBriefcase className="text-xl" />
-							<Link to="/" className="ml-3 pr-4 capitalize">
-								portfolio
-							</Link>
-						</div>
-
-						<div className="flex p-2">
-							<IoNewspaperSharp className="text-xl" />
-							<Link to="/" className="ml-3 pr-4 capitalize">
-								News
-							</Link>
-						</div>
-						<div className="flex p-2">
-							<HiMailOpen className="text-xl" />
-							<Link to="/" className="ml-3 pr-4 capitalize">
-								Contact
-							</Link>
-						</div>
-					</ul>
+					<NavList />
+					<div className="flex gap-2 p-2 mt-10">
+						<p className="text-gray-500 italic">&copy; {date} Sark Seven ♥</p>
+						<img src={logo} alt="sark seven logo" width="15%" />
+					</div>
 				</div>
 			</nav>
 			<Outlet />
