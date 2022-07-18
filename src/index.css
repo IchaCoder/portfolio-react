@@ -23,6 +23,8 @@ body {
 
 .nav {
 	flex: 0.4;
+	box-shadow: 1px 0 20px 1px grey;
+	z-index: 99;
 }
 
 a {
@@ -47,6 +49,10 @@ a:hover {
 	animation: borderRadius 10s infinite;
 	box-shadow: 0 0 2px 15px rgba(0, 0, 0, 0.6);
 	width: 200px;
+}
+
+.fixed_nav {
+	box-shadow: 1px 0 20px 1px grey;
 }
 
 @media (min-width: 768px) {
