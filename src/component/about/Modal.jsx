@@ -39,7 +39,7 @@ const Modal = () => {
 					initial="hidden"
 					animate="visible"
 					variants={variants}
-					className={`fixed w-full h-full z-50 top-0 bg-modal left-0 grid place-items-center`}
+					className={`fixed w-full h-full z-50 top-0 modal left-0 grid place-items-center `}
 					onClick={handleCloseModal}
 				>
 					<div
