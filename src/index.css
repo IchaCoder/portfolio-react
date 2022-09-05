@@ -68,6 +68,10 @@ a:hover {
 	aspect-ratio: 1/1.2;
 }
 
+.modal {
+	background: #000000b3;
+}
+
 @media (min-width: 768px) {
 	.my_image {
 		width: 250px;
