@@ -9,7 +9,7 @@ const About = () => {
 		<div className="main md:flex-1 mb-20">
 			<img
 				src={mypic}
-				alt="myPicture"
+				alt="Emmanuel Yeboah"
 				className="about_img pt-32 md:pt-0 lg:p-0 "
 			/>
 			<h2 className="font-bold text-xl pl-5 md:pl-12 pt-8">
@@ -18,9 +18,9 @@ const About = () => {
 			<section className="grid md:grid-cols-2 p-5 md:p-12 md:pt-5 md:gap-8 gap-16 leading-loose">
 				<div className="">
 					<p>
-						Hello, I am a student and developer based in Ghana.With the grit and
-						determination to make the web a better place, I make websites for
-						fun. Happy to collaborate on a project with anyone.
+						Hello, I am a student and developer based in Ghana. With the grit
+						and determination to make the web a better place, I make websites
+						for fun. Happy to collaborate on a project with anyone.
 					</p>
 					<button
 						className="bg-black text-white p-2 md:p-4 px-8 mt-10 hover:tracking-widest"

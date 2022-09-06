@@ -17,7 +17,7 @@ const NavList = () => {
 					to="/"
 					className={`({ isActive }) => (isActive ? "active" : "") ml-3 pr-4 capitalize`}
 				>
-					hello
+					home
 				</NavLink>
 			</div>
 			<div className="flex p-2">

@@ -12,7 +12,7 @@ const Home = () => {
 	return (
 		<div className="main lg:grid grid-cols-2 place-items-center ">
 			<div className="grid place-items-center pt-40 lg:pt-0">
-				<img src={image} alt="my_pic" className="my_image md:w-3/5" />
+				<img src={image} alt="Emmanuel Yeboah" className="my_image md:w-3/5" />
 			</div>
 			<div className="p-4 m-4 text-center lg:text-left lg:mr-20 lg:pt-28">
 				<h1 className="font-bold text-4xl md:text-5xl mb-6 uppercase">
