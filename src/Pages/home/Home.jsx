@@ -6,11 +6,31 @@ import {
 	FaLinkedinIn,
 	BsGithub,
 } from "react-icons/all";
+import { motion } from "framer-motion";
 
 const Home = () => {
 	document.title = "Porfolio | Home";
+
+	const container = {
+		hidden: { opacity: 0, x: -50 },
+		show: {
+			opacity: 1,
+			x: 0,
+			transition: {
+				delay: 0.5,
+				type: "spring",
+				stiffness: "200",
+			},
+		},
+	};
+
 	return (
-		<div className="main lg:grid grid-cols-2 place-items-center ">
+		<motion.div
+			variants={container}
+			initial="hidden"
+			animate="show"
+			className="main lg:grid grid-cols-2 place-items-center "
+		>
 			<div className="grid place-items-center pt-40 lg:pt-0">
 				<img src={image} alt="Emmanuel Yeboah" className="my_image md:w-3/5" />
 			</div>
@@ -44,7 +64,7 @@ const Home = () => {
 					</a>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
