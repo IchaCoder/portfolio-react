@@ -2,11 +2,31 @@ import React from "react";
 import mypic from "../../assets/me1.jpg";
 import Modal from "../../component/about/Modal";
 import { useGlobalContext } from "../../context";
+import { motion } from "framer-motion";
 
 const About = () => {
 	const { setIsModalOpen } = useGlobalContext();
+
+	const container = {
+		hidden: { opacity: 0, x: -50 },
+		show: {
+			opacity: 1,
+			x: 0,
+			transition: {
+				delay: 0.5,
+				type: "spring",
+				stiffness: "200",
+			},
+		},
+	};
+
 	return (
-		<div className="main md:flex-1 mb-20">
+		<motion.div
+			variants={container}
+			initial="hidden"
+			animate="show"
+			className="main md:flex-1 mb-20"
+		>
 			<img
 				src={mypic}
 				alt="Emmanuel Yeboah"
@@ -53,7 +73,7 @@ const About = () => {
 				</div>
 			</section>
 			<Modal />
-		</div>
+		</motion.div>
 	);
 };
 

@@ -18,19 +18,31 @@ const FixedBottomNav = () => {
 				<IoHome className="flex m-auto text-sm" />
 				<div>Home</div>
 			</NavLink>
-			<NavLink to="/about">
+			<NavLink
+				to="/about"
+				className={({ isActive }) => (isActive ? "active" : "")}
+			>
 				<BsPersonFill className="flex m-auto text-sm" />
 				<div>About</div>
 			</NavLink>
-			<NavLink to="/porfolio">
+			<NavLink
+				to="/portfolio"
+				className={({ isActive }) => (isActive ? "active" : "")}
+			>
 				<GoBriefcase className="flex m-auto text-sm" />
 				<div>Portfolio</div>
 			</NavLink>
-			<NavLink to="/news">
+			<NavLink
+				to="/news"
+				className={({ isActive }) => (isActive ? "active" : "")}
+			>
 				<IoNewspaperSharp className="flex m-auto text-sm" />
 				<div>News</div>
 			</NavLink>
-			<NavLink to="/contact">
+			<NavLink
+				to="/contact"
+				className={({ isActive }) => (isActive ? "active" : "")}
+			>
 				<HiMailOpen className="flex m-auto text-sm" />
 				<div>Contact</div>
 			</NavLink>

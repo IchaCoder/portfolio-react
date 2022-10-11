@@ -19,7 +19,7 @@ body {
 }
 
 * {
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 
 a {
@@ -48,7 +48,7 @@ a:hover {
 }
 
 .my_image {
-	animation: borderRadius 10s infinite;
+	animation: borderRadius 20s infinite;
 	box-shadow: 0 0 2px 15px rgba(0, 0, 0, 0.6);
 	width: 200px;
 }
@@ -72,6 +72,10 @@ a:hover {
 	background: #000000b3;
 }
 
+.portfolio_heading {
+	background: rgba(0, 0, 0, 0.04);
+}
+
 @media (min-width: 768px) {
 	.my_image {
 		width: 250px;
@@ -92,6 +96,9 @@ a:hover {
 		aspect-ratio: 2/0.9;
 		width: 90%;
 	}
+	.portfolio_main {
+		margin-top: -50px;
+	}
 }
 
 @keyframes borderRadius {
@@ -110,4 +117,19 @@ a:hover {
 	100% {
 		border-radius: 40% 40% 40% 60%;
 	}
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 20px;
 }
