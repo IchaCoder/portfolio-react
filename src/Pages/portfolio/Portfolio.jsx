@@ -1,8 +1,12 @@
 import React from "react";
 import Button from "./Button";
 import portfolio_data from "./data";
+import PortfolioCards from "./PortfolioCards";
+import { useGlobalContext } from "../../context";
 
 const Portfolio = () => {
+	const { buttonName } = useGlobalContext();
+
 	return (
 		<div className="main portfolio_main lg:pl-8">
 			<div className="mt-40 p-3 w-max portfolio_heading uppercase px-4 font-semibold text-xs ml-4">
@@ -16,6 +20,7 @@ const Portfolio = () => {
 					})}
 				</div>
 			</div>
+			<PortfolioCards />
 		</div>
 	);
 };
