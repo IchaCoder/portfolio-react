@@ -19,7 +19,7 @@ body {
 }
 
 * {
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 a {
@@ -74,6 +74,22 @@ a:hover {
 
 .portfolio_heading {
 	background: rgba(0, 0, 0, 0.04);
+}
+
+.portfolio_overlay {
+	z-index: -20;
+	transform: translatex(-500px);
+}
+
+.portfolio_overlay:hover {
+	z-index: 20;
+	transform: translatex(20px);
+}
+
+.porfolio_cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 2rem;
 }
 
 @media (min-width: 768px) {

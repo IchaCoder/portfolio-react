@@ -1,3 +1,3 @@
-const portfolio = ["All", "Youtube", "React", "HTML", "Strapi", "Firebase"];
+const portfolio = ["All", "Tailwind", "React", "HTML", "Strapi", "Firebase"];
 
 export default portfolio;
