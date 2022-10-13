@@ -23,12 +23,14 @@ const PortfolioCards = () => {
 							<a
 								href={link}
 								className="active flex w-max p-2 mx-auto hover:bg-black hover:text-white"
+								target="_blank"
 							>
 								<HiLink className="mr-2 mt-1" /> View Site{" "}
 							</a>
 							<a
 								href={github}
 								className="active flex w-max p-2  mx-auto hover:bg-black hover:text-white"
+								target="_blank"
 							>
 								<BsGithub className="mr-2 mt-1" /> Github Link{" "}
 							</a>
