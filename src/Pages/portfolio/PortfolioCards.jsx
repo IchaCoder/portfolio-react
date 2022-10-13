@@ -1,6 +1,7 @@
 import React from "react";
 import { BsGithub, HiLink } from "react-icons/all";
 import { useGlobalContext } from "../../context";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const PortfolioCards = () => {
 	const { items } = useGlobalContext();
@@ -9,13 +10,18 @@ const PortfolioCards = () => {
 			{items.map((item, index) => {
 				const { name, categories, img, link, github } = item;
 				return (
-					<div className="bg-white shadow-lg" key={index}>
+					<ScrollAnimation
+						animateIn="animate__bounceInLeft fadeIn"
+						className="bg-white shadow-lg"
+						key={index}
+						duration={2}
+					>
 						<div className="h-96 ">
 							<img
 								src={img}
 								className="h-full w-full object-cover"
 								alt={name}
-								loading="lazy"
+								// loading="lazy"
 							/>
 						</div>
 						<h2 className="mt-6 font-semibold text-center">{name}</h2>
@@ -42,7 +48,7 @@ const PortfolioCards = () => {
 								})}
 							</div>
 						</div>
-					</div>
+					</ScrollAnimation>
 				);
 			})}
 		</div>
