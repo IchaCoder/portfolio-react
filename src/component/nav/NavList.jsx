@@ -14,6 +14,7 @@ const NavList = () => {
 			<div className="flex p-2">
 				<IoHome className="text-xl" />
 				<NavLink
+					end
 					to="/"
 					className={`({ isActive }) => (isActive ? "active" : "") ml-3 pr-4 capitalize`}
 				>

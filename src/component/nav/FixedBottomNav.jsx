@@ -14,7 +14,11 @@ const FixedBottomNav = () => {
 			style={{ backgroundColor: "#DEDEDE" }}
 			className="text-xs flex justify-around z-50 gap-2 items-center w-full h-16 fixed bottom-0 logo left-0 lg:hidden"
 		>
-			<NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+			<NavLink
+				to="/"
+				end
+				className={({ isActive }) => (isActive ? "active" : "")}
+			>
 				<IoHome className="flex m-auto text-sm" />
 				<div>Home</div>
 			</NavLink>
