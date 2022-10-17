@@ -1,20 +1,18 @@
-/** @format */
-
 import React from "react";
 import { Outlet } from "react-router";
 
 import logo from "../../assets/logo.svg";
 import NavList from "./NavList";
 import FixedTopNav from "./FixedTopNav";
-import { useGlobalContext } from "../../context";
 import FixedBottomNav from "./FixedBottomNav";
 
 const Home = () => {
-	const {} = useGlobalContext();
 	const date = new Date().getFullYear();
 
 	return (
-		<main className="lg:flex ">
+		<>
+			<FixedTopNav />
+			<FixedBottomNav />
 			<nav className="nav hidden lg:grid bg-white h-screen fixed">
 				<div className="w-3/5 mx-auto nav_custom">
 					<div className="w-full p-2 logo font-bold text-4xl mb-10">EMMA</div>
@@ -25,9 +23,7 @@ const Home = () => {
 					</div>
 				</div>
 			</nav>
-
-			<Outlet />
-		</main>
+		</>
 	);
 };
 

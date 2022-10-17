@@ -21,7 +21,7 @@ const PortfolioCards = () => {
 								src={img}
 								className="h-full w-full object-cover"
 								alt={name}
-								// loading="lazy"
+								loading="lazy"
 							/>
 						</div>
 						<h2 className="mt-6 font-semibold text-center">{name}</h2>
