@@ -11,7 +11,7 @@ const PortfolioCards = () => {
 				const { name, categories, img, link, github } = item;
 				return (
 					<ScrollAnimation
-						animateIn="animate__bounceInLeft fadeIn"
+						animateIn="custom_animate"
 						className="bg-white shadow-lg"
 						key={index}
 						duration={2}

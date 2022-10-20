@@ -88,11 +88,34 @@ a:hover {
 
 .porfolio_cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 	gap: 2rem;
 }
 
+.news_img {
+	transition: all 0.3s linear;
+	cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	.porfolio_cards {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+}
+
 @media (min-width: 768px) {
+	.read_more_span {
+		transform: translateX(-100px);
+		transition: all 0.3s linear;
+		opacity: 0;
+		margin-right: -5rem;
+	}
+
+	.single_news:hover .read_more_span {
+		transform: translateX(0px);
+		opacity: 1;
+		margin-right: 6rem;
+	}
 	.my_image {
 		width: 250px;
 		margin-top: 80px;
@@ -115,6 +138,9 @@ a:hover {
 	.portfolio_main {
 		margin-top: -50px;
 	}
+	.news_main {
+		width: 65%;
+	}
 }
 
 @keyframes borderRadius {
@@ -136,7 +162,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-	width: 8px;
+	width: 6px;
 }
 
 /* Track */
@@ -146,6 +172,6 @@ a:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: black;
+	background: #2cb1bc;
 	border-radius: 20px;
 }
