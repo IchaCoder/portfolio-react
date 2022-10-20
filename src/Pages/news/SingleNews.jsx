@@ -7,7 +7,7 @@ import {
 	FaLinkedinIn,
 	BsGithub,
 } from "react-icons/all";
-import image from "../../assets/foodmenu.png";
+import { useGlobalContext } from "../../context";
 
 const variants = {
 	visible: {
@@ -28,18 +28,19 @@ const navVariants = {
 	},
 };
 
-const SingleNews = ({ isModalOpen, setIsModalOpen }) => {
-	// const { isModalOpen, setIsModalOpen } = useGlobalContext();
+const SingleNews = () => {
+	const { singleNews, openSingleNews, setOpenSingleNews } = useGlobalContext();
+	const { author, content, date, imageUrl, title, url } = singleNews;
 	const handleCloseModal = (e) => {
 		const targetClass = e.target.classList;
 		if (targetClass.contains("fixed")) {
-			setIsModalOpen(false);
+			setOpenSingleNews(false);
 		}
 	};
 
 	return (
 		<>
-			{isModalOpen && (
+			{openSingleNews && (
 				<motion.section
 					initial="hidden"
 					animate="visible"
@@ -56,29 +57,18 @@ const SingleNews = ({ isModalOpen, setIsModalOpen }) => {
 						<div className="flex absolute right-0 border-2 -top-10 border-solid border-white rounded-full">
 							<IoMdClose
 								className="text-3xl cursor-pointer text-white"
-								onClick={() => setIsModalOpen(false)}
+								onClick={() => setOpenSingleNews(false)}
 							/>
 						</div>
 						<div className="newborder max-h-[500px] w-full p-6 md:p-14 overflow-y-scroll">
 							<div>
-								<img src={image} alt="image" />
+								<img src={imageUrl} alt="image" />
 							</div>
 							<div className="text-[#767676] uppercase pt-10 pb-2 border-b border-solid border-[rgba(0,0,0,.15)] text-sm italic">
-								By Emmanuel Yeboah | 05 April 2021
+								By {author} | {date}
 							</div>
-							<h3 className="pt-6 font-bold text-xl cursor-pointer">
-								Microsoft release a new tool that enables direct video hosting
-								blah blah
-							</h3>
-							<p className="py-12">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
-								veniam numquam ut sed deserunt hic praesentium sequi, ex
-								perspiciatis natus commodi quis illo labore veritatis unde ad,
-								fuga consectetur. Alias? Quos suscipit labore blanditiis quam
-								culpa corporis, hic odit praesentium commodi. Vero reprehenderit
-								consequatur iure molestiae nostrum eum enim aliquid consectetur
-								repellendus error, ea rem debitis. Sed tenetur maxime possimus!
-							</p>
+							<h3 className="pt-6 font-bold text-xl cursor-pointer">{title}</h3>
+							<p className="py-12">{content}</p>
 							<div className="flex gap-4 pb-8">
 								<span className="font-semibold">Share:</span>
 								<span className="text-lg flex justify-center gap-4 pt-1">
