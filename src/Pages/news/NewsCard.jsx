@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { useGlobalContext } from "../../context";
+import Skeleton from "react-loading-skeleton";
 
 const NewsCard = () => {
 	const { news, loading, getSingleNews } = useGlobalContext();
@@ -20,6 +21,7 @@ const NewsCard = () => {
 							animateIn="custom_animate"
 							className="bg-white shadow-lg single_news"
 							key={id}
+							style={{ animationDuration: "0.5s" }}
 						>
 							<div className="h-96 overflow-hidden">
 								<img
@@ -49,7 +51,7 @@ const NewsCard = () => {
 					);
 				})
 			) : (
-				<div className="text-3xl text-red-500 text-center">Loading...</div>
+				<Skeleton count={3} />
 			)}
 		</div>
 	);
