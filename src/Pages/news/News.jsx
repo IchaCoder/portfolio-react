@@ -1,7 +1,6 @@
 import React from "react";
 import "./news.css";
 import SingleNews from "./SingleNews";
-import { useGlobalContext } from "../../context";
 import NewsCard from "./NewsCard";
 
 const News = () => {
@@ -16,6 +15,7 @@ const News = () => {
 				<h1 className="font-bold text-3xl ml-4 mt-4">Latest News</h1>
 			</div>
 			<NewsCard />
+
 			<SingleNews setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} />
 		</div>
 	);

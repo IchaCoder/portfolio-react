@@ -18,10 +18,10 @@ const AppProvider = ({ children }) => {
 		try {
 			const { data } = await axios.get(baseURL);
 			setNews(data.data);
-			setLoading(false);
+			// setLoading(false);
 		} catch (error) {
 			console.log(error);
-			setLoading(false);
+			// setLoading(false);
 		}
 	};
 
