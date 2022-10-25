@@ -1,5 +1,6 @@
 import React from "react";
-import { BsGithub, HiLink } from "react-icons/all";
+import { BsGithub } from "react-icons/all";
+import { HiLink } from "react-icons/hi2";
 import { useGlobalContext } from "../../context";
 import Fade from "react-reveal/Fade";
 
