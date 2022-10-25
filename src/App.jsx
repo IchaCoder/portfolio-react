@@ -6,6 +6,7 @@ import { SkeletonTheme } from "react-loading-skeleton";
 import About from "./Pages/about/About";
 import Portfolio from "./Pages/portfolio/Portfolio";
 import News from "./Pages/news/News";
+import Contact from "./Pages/contact/Contact";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 						<Route path="/about" element={<About />} />
 						<Route path="/portfolio" element={<Portfolio />} />
 						<Route path="/news" element={<News />} />
+						<Route path="/contact" element={<Contact />} />
 					</Routes>
 				</main>
 			</Router>

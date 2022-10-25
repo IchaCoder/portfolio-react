@@ -8,7 +8,7 @@ const AppProvider = ({ children }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [items, setItems] = React.useState(portfolioItems);
 	const [news, setNews] = useState([]);
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(false);
 	const [singleNews, setSingleNews] = useState({});
 	const [openSingleNews, setOpenSingleNews] = useState(false);
 	const baseURL = "https://inshorts.deta.dev/news?category=technology";
@@ -18,10 +18,10 @@ const AppProvider = ({ children }) => {
 		try {
 			const { data } = await axios.get(baseURL);
 			setNews(data.data);
-			// setLoading(false);
+			setLoading(false);
 		} catch (error) {
 			console.log(error);
-			// setLoading(false);
+			setLoading(false);
 		}
 	};
 

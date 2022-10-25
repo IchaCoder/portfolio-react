@@ -32,6 +32,18 @@ button {
 	transition: all 0.3s linear;
 }
 
+input,
+textarea {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	outline: none;
+}
+
 a:hover {
 	letter-spacing: 0.2rem;
 }
@@ -48,13 +60,14 @@ a:hover {
 }
 
 .my_image {
-	animation: borderRadius 20s infinite;
+	animation: borderRadius 10s infinite;
 	box-shadow: 0 0 2px 15px rgba(0, 0, 0, 0.6);
 	width: 200px;
 }
 
 .fixed_nav {
-	box-shadow: 1px 0 20px 1px grey;
+	box-shadow: 1px 0 10px 1px grey;
+	z-index: 1000;
 }
 
 .active {
@@ -145,16 +158,16 @@ a:hover {
 
 @keyframes borderRadius {
 	0% {
-		border-radius: 20% 10% 60% 50%;
+		border-radius: 20% 30% 60% 50%;
 	}
 	25% {
-		border-radius: 30% 70% 40% 10%;
+		border-radius: 50% 70% 40% 40%;
 	}
 	50% {
-		border-radius: 60% 50% 10% 30%;
+		border-radius: 60% 50% 30% 40%;
 	}
 	75% {
-		border-radius: 10% 50% 20% 60%;
+		border-radius: 40% 50% 40% 60%;
 	}
 	100% {
 		border-radius: 40% 40% 40% 60%;
