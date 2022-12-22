@@ -21,11 +21,11 @@ const portfolioItems = [
 		github: "https://github.com/IchaCoder/quote-generator-app",
 	},
 	{
-		name: "Foodmenu App",
-		categories: ["HTML", "CSS", "JavaScript"],
+		name: "MealsDB",
+		categories: ["Next", "Tailwind", "Fetch API"],
 		img: menu,
-		link: "https://foodmenuapp.netlify.app/",
-		github: "https://github.com/IchaCoder/menu-items",
+		link: "https://choosemeal.netlify.app/",
+		github: "https://github.com/IchaCoder/choose-your-meal",
 	},
 	{
 		name: "Furniture Showroom Landing Page",
