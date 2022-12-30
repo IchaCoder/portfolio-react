@@ -39,18 +39,18 @@ const Modal = () => {
 					initial="hidden"
 					animate="visible"
 					variants={variants}
-					className={`fixed w-full h-full z-50 top-0 modal left-0 grid place-items-center `}
+					className={`fixed w-full h-full z-50 top-0 modal bg-[#000000b3] dark:bg-[rgba(255,255,255,.2)] left-0 grid place-items-center `}
 					onClick={handleCloseModal}
 				>
 					<div
-						className="md:w-2/5 bg-white h-[70%] w-11/12 rounded-lg relative overflow-y-scroll text-black p-8"
+						className="md:w-2/5 bg-white dark:bg-[#121212] h-[70%] w-11/12 rounded-lg relative overflow-y-scroll text-black p-8"
 						initial="hidden"
 						animate="visible"
 						variants={navVariants}
 					>
 						<div className="flex">
 							<IoMdClose
-								className="text-3xl cursor-pointer -top-8 text-black border-2 border-solid border-black rounded-full"
+								className="text-3xl cursor-pointer dark:text-white -top-8 text-black border-2 border-solid border-black dark:border-white rounded-full"
 								onClick={() => setIsModalOpen(false)}
 							/>
 						</div>

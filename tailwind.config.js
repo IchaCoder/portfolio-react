@@ -1,6 +1,7 @@
 /** @format */
 
 module.exports = {
+	darkMode: "class",
 	content: ["./src/**/*.{html,jsx}"],
 	theme: {
 		extend: {

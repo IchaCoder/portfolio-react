@@ -49,7 +49,7 @@ const SingleNews = () => {
 					onClick={handleCloseModal}
 				>
 					<div
-						className=" bg-white rounded-lg w-11/12 md:w-4/5  relative text-black"
+						className=" bg-white dark:bg-[#282828] rounded-lg w-11/12 md:w-4/5  relative text-black dark:text-white"
 						initial="hidden"
 						animate="visible"
 						variants={navVariants}

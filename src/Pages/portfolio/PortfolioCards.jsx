@@ -7,12 +7,16 @@ import Fade from "react-reveal/Fade";
 const PortfolioCards = () => {
 	const { items } = useGlobalContext();
 	return (
-		<div className="mt-8 max-w-[95%] mx-auto mb-24 porfolio_cards">
+		<div className="mt-8 max-w-[95%] mx-auto mb-24 porfolio_cards dark:text-white">
 			{items.map((item, index) => {
 				const { name, categories, img, link, github } = item;
 				return (
 					<Fade left>
-						<div className="bg-white shadow-lg" key={index} duration={2}>
+						<div
+							className="bg-white dark:bg-[#121212] shadow-lg"
+							key={index}
+							duration={2}
+						>
 							<div className="h-96 ">
 								<img
 									src={img}
@@ -25,14 +29,14 @@ const PortfolioCards = () => {
 							<div className="flex flex-col md:flex-row justify-between mt-4">
 								<a
 									href={link}
-									className="active flex w-max p-2 mx-auto hover:bg-black hover:text-white"
+									className="active flex w-max p-2 mx-auto hover:bg-black dark:hover:bg-gray-300 dark:hover:text-black hover:text-white"
 									target="_blank"
 								>
 									<HiLink className="mr-2 mt-1" /> View Site{" "}
 								</a>
 								<a
 									href={github}
-									className="active flex w-max p-2  mx-auto hover:bg-black hover:text-white"
+									className="active flex w-max p-2  mx-auto hover:bg-black hover:text-white dark:hover:bg-gray-300 dark:hover:text-black"
 									target="_blank"
 								>
 									<BsGithub className="mr-2 mt-1" /> Github Link{" "}

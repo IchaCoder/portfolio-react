@@ -23,8 +23,8 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="main portfolio_main news_main lg:pl-8">
-			<div className="mt-40 p-3 w-max portfolio_heading uppercase px-4 font-semibold text-xs ml-4">
+		<div className="main pt-40 portfolio_main news_main lg:pl-8 dark:text-white dark:bg-[#282828] pb-4">
+			<div className="p-3 w-max portfolio_heading uppercase dark:bg-gray-300 dark:text-black px-4 font-semibold text-xs ml-4">
 				contact
 			</div>
 			<div className="portfolio_header lg:flex">
@@ -58,7 +58,7 @@ const Contact = () => {
 					className="w-full p-2 placeholder:pl-1 placeholder:font-semibold placeholder:italic my-4"
 					onChange={(e) => setTextArea(e.target.value)}
 				/>
-				<button className="bg-black text-white p-3 mt-4 px-8 hover:tracking-widest">
+				<button className="bg-black dark:bg-white dark:text-black text-white p-3 mt-4 px-8 hover:tracking-widest">
 					Send Message
 				</button>
 			</form>

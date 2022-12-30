@@ -10,10 +10,7 @@ import { NavLink } from "react-router-dom";
 
 const FixedBottomNav = () => {
 	return (
-		<div
-			style={{ backgroundColor: "#DEDEDE", zIndex: 1000 }}
-			className="text-xs flex justify-around z-50 gap-2 items-center w-full h-16 fixed bottom-0 logo left-0 lg:hidden"
-		>
+		<div className="text-xs bg-[#dedede] dark:bg-[#121212] dark:text-white z-[1000] flex justify-around gap-2 items-center w-full h-16 fixed bottom-0 logo left-0 lg:hidden">
 			<NavLink
 				to="/"
 				end

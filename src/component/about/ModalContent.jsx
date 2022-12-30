@@ -8,12 +8,13 @@ import {
 	FaGitAlt,
 } from "react-icons/all";
 import { IoLogoJavascript } from "react-icons/io";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const ModalContent = () => {
 	return (
 		<div>
-			<h2 className="font-bold text-xl mt-10">Skills</h2>
-			<div className="mt-6">
+			<h2 className="font-bold text-xl mt-10 dark:text-white">Skills</h2>
+			<div className="mt-6 dark:text-white">
 				<div className="flex mb-4">
 					<AiFillHtml5 className="text-5xl" />
 					<div className="p-4 ">HTML</div>
@@ -41,6 +42,10 @@ const ModalContent = () => {
 				<div className="flex mb-4">
 					<FaGitAlt className="text-5xl" />
 					<div className="p-4 ">Git</div>
+				</div>
+				<div className="flex mb-4">
+					<TbBrandNextjs className="text-5xl" />
+					<div className="p-4 ">NextJS</div>
 				</div>
 			</div>
 		</div>

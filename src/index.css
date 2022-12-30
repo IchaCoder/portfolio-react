@@ -15,7 +15,7 @@ code {
 body {
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
-	background-color: rgb(243 244 246);
+	/* background-color: rgb(243 244 246); */
 }
 
 * {
@@ -81,10 +81,6 @@ a:hover {
 	aspect-ratio: 1/1.2;
 }
 
-.modal {
-	background: #000000b3;
-}
-
 .portfolio_heading {
 	background: rgba(0, 0, 0, 0.04);
 }
@@ -142,11 +138,12 @@ a:hover {
 @media (min-width: 1024px) {
 	.main {
 		margin-left: 30%;
-		margin-top: 100px;
+		padding-top: 100px;
 	}
 	.about_img {
-		aspect-ratio: 2/0.9;
+		aspect-ratio: 2.7/1.7;
 		width: 90%;
+		object-fit: contain;
 	}
 	.portfolio_main {
 		margin-top: -50px;

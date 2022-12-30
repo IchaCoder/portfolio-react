@@ -17,7 +17,10 @@ const NewsCard = () => {
 
 					return (
 						<Fade left>
-							<div className="bg-white shadow-lg single_news" key={id}>
+							<div
+								className="bg-white dark:bg-[#121212] shadow-lg single_news"
+								key={id}
+							>
 								<div className="h-96 overflow-hidden">
 									<img
 										src={imageUrl}
@@ -31,13 +34,13 @@ const NewsCard = () => {
 									By {author} | {date}
 								</div>
 								<h3
-									className="pt-4 px-8 font-bold text-lg cursor-pointer"
+									className="pt-4 px-8 font-bold text-lg cursor-pointer dark:text-white"
 									onClick={() => openSingleNews(id)}
 								>
 									{title}
 								</h3>
 								<button
-									className="read_more relative ml-8 pt-6 pb-14 font-semibold text-xs read_more_span"
+									className="read_more relative ml-8 pt-6 pb-14 font-semibold text-xs read_more_span dark:text-white"
 									onClick={() => openSingleNews(id)}
 								>
 									READ MORE

@@ -10,7 +10,7 @@ import {
 
 const NavList = () => {
 	return (
-		<ul>
+		<ul className="dark:text-white">
 			<div className="flex p-2">
 				<IoHome className="text-xl" />
 				<NavLink
