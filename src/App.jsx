@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "./component/nav/Navbar";
 import Home from "./Pages/home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -8,6 +7,7 @@ import News from "./Pages/news/News";
 import Contact from "./Pages/contact/Contact";
 import { MdDarkMode } from "react-icons/md";
 import { useEffect } from "react";
+import DarkMode from "./component/darkmode/DarkMode";
 
 function App() {
 	useEffect(() => {
@@ -25,9 +25,7 @@ function App() {
 	return (
 		<Router>
 			<main className="lg:flex">
-				<div className="fixed lg:absolute right-4 text-3xl top-2 lg:p-4 lg:top-8 lg:right-8 cursor-pointer bg-gray-200 z-[10000] p-2 rounded-full">
-					<MdDarkMode />
-				</div>
+				<DarkMode />
 				<Navbar />
 				<Routes>
 					<Route exact path="/" element={<Home />} />
