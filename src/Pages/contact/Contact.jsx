@@ -23,7 +23,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="main pt-40 portfolio_main news_main lg:pl-8 dark:text-white dark:bg-[#282828] pb-4">
+		<div className="main pt-40 portfolio_main news_main lg:pl-8 bg-[rgb(243,244,246)] dark:text-white dark:bg-[#282828] pb-4">
 			<div className="p-3 w-max portfolio_heading uppercase dark:bg-gray-300 dark:text-black px-4 font-semibold text-xs ml-4">
 				contact
 			</div>

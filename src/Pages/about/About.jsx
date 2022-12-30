@@ -25,7 +25,7 @@ const About = () => {
 			variants={container}
 			initial="hidden"
 			animate="show"
-			className="main h-max pb-20 dark:bg-[#282828]"
+			className="main h-max pb-20 dark:bg-[#282828] bg-[rgb(243,244,246)]"
 		>
 			<img
 				src={mypic}

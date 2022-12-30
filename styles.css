@@ -904,6 +904,16 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[rgb\(243\2c 244\2c 246\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgb\(49\2c 79\2c 139\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 79 139 / var(--tw-bg-opacity));
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;

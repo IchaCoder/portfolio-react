@@ -19,7 +19,7 @@ const DarkMode = () => {
 	return (
 		<div
 			onClick={toggleDarkMode}
-			className="fixed lg:absolute right-4 text-3xl top-2 lg:p-4 lg:top-8 lg:right-8 cursor-pointer bg-gray-200 z-[10000] p-2 rounded-full"
+			className="fixed lg:absolute right-4 text-3xl top-2 lg:top-8 lg:right-8 cursor-pointer bg-gray-200 z-[10000] p-2 rounded-full"
 		>
 			{localStorage.theme === "dark" ? <MdOutlineLightMode /> : <MdDarkMode />}
 		</div>

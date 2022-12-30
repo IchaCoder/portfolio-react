@@ -29,7 +29,7 @@ const Home = () => {
 			variants={container}
 			initial="hidden"
 			animate="show"
-			className="dark:bg-[#282828] h-screen grid lg:place-items-center lg:grid-cols-2 main"
+			className="dark:bg-[#282828] bg-[rgb(243,244,246)] h-screen grid lg:place-items-center lg:grid-cols-2 main"
 		>
 			<div className="pt-40 lg:pt-0 lg:mb-32 grid lg:block place-items-center">
 				<img src={image} alt="Emmanuel Yeboah" className="my_image md:w-3/5" />

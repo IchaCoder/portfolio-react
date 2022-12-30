@@ -5,7 +5,7 @@ import PortfolioCards from "./PortfolioCards";
 
 const Portfolio = () => {
 	return (
-		<div className="main pt-40 dark:bg-[#282828] portfolio_main lg:pl-8 pb-4">
+		<div className="main pt-40 dark:bg-[#282828] bg-[rgb(243,244,246)] portfolio_main lg:pl-8 pb-4">
 			<div className="p-3 w-max portfolio_heading uppercase px-4 font-semibold text-xs ml-4 dark:text-black dark:bg-gray-300">
 				Porfolio
 			</div>
