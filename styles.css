@@ -768,6 +768,10 @@ video {
   width: max-content;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-\[90\%\] {
   max-width: 90%;
 }

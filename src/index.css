@@ -148,9 +148,6 @@ a:hover {
 	.portfolio_main {
 		margin-top: -50px;
 	}
-	.news_main {
-		width: 65%;
-	}
 }
 
 @keyframes borderRadius {
